@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Book Appointment — Hospital Management</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Book an Appointment</h1>
+    </header>
+
+    <main style="padding:18px">
+      <div class="panel" style="max-width:640px;margin:0 auto">
+        <p><a href="index.html">&larr; Back to schedule</a></p>
+
+        <form id="booking-form">
+          <label for="doctor">Doctor</label>
+          <select id="doctor" required></select>
+
+          <label for="date">Date</label>
+          <input id="date" type="date" required />
+
+          <label for="time">Time</label>
+          <input id="time" type="time" required />
+
+          <button type="submit">Book Appointment</button>
+        </form>
+
+        <div id="messages" aria-live="polite"></div>
+
+        <h3>Booked Appointments</h3>
+        <ul id="appointments-list"></ul>
+      </div>
+    </main>
+
+    <footer>
+      <small>Client-side demo. Bookings are temporary and cleared on reload.</small>
+    </footer>
+
+    <script src="js/book.js"></script>
+  </body>
+</html>

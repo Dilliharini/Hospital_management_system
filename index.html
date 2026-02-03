@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hospital Management - Doctor Schedule & Booking</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Hospital Management System — Doctor Schedule</h1>
+    </header>
+
+    <main>
+      <section class="layout">
+        <div class="panel">
+          <h2>Doctors' Availability</h2>
+          <table id="doctors-table">
+            <thead>
+              <tr>
+                <th>Doctor</th>
+                <th>Specialty</th>
+                <th>Available Days</th>
+                <th>Available Times</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Populated by JS -->
+            </tbody>
+          </table>
+
+          <div style="text-align:center;margin-top:14px">
+            <a href="book.html" class="btn-primary">BOOK AN APPOINTMENT</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>Demo: client-side only. No server or DB — bookings are stored in memory.</small>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
